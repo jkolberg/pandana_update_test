@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-pandana = { path = "C:/Users/JKolberg/UDST_forks/pandana", editable = true }
+pandana = { path = "/home/codespace/UDST_forks/pandana", editable = true }
 
 [tool.uv]
 no-binary-package = ["pandana"]

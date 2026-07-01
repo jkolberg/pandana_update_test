@@ -46,5 +46,6 @@ Quick test of a local `pandana` build against sample network/household data.
    ```bash
    uv sync
    ```
+   Note: this will take awhile the first time you run uv sync because it has to compile the C components.
 
 5. Open `pandana_test.ipynb` in VS Code and select the `pandana-update-test` kernel.

@@ -1,0 +1,26 @@
+[project]
+name = "pandana-update-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas >=2.0, <3.0",
+    "pandana",
+    "ipykernel>=7.3.0",
+    "datashader>=0.19.1",
+    "bokeh>=3.9.1",
+]
+
+[tool.uv.sources]
+pandana = { path = "C:/Users/JKolberg/PythonProjects/UDST_forks/pandana", editable = true }
+
+[tool.uv]
+no-binary-package = ["pandana"]
+
+# This forces any external package needing numpy or pybind11 at compile-time 
+# to use the updated, NumPy 2-compatible versions
+override-dependencies = [
+    "numpy>=2.0.0",
+    "pybind11>=2.12.0"
+]
